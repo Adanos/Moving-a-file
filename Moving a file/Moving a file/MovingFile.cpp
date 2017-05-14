@@ -4,7 +4,7 @@ MovingFile::MovingFile()
 {
 }
 
-void MovingFile::moveFile(std::string sourcePath, std::string destinationPath)
+void MovingFile::moveFile(std::string& sourcePath, std::string& destinationPath)
 {
 	try
 	{

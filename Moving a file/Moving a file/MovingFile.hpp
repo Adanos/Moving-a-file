@@ -7,6 +7,6 @@ class MovingFile
 public:
 	MovingFile();
 	~MovingFile();
-	void moveFile(std::string sourcePath, std::string destinationPath);
+	void moveFile(std::string& sourcePath, std::string& destinationPath);
 };
 

@@ -3,11 +3,11 @@
 int main()
 {
 	std::string sourcePath, destinationPath;
-	std::cin >> sourcePath >> destinationPath;
 	MovingFile movingFile;
 
 	std::cout << "Enter source and destination paths:" << std::endl;
-
+	std::cin >> sourcePath >> destinationPath;
+	
 	try
 	{
 		movingFile.moveFile(sourcePath, destinationPath);
@@ -16,7 +16,7 @@ int main()
 	{
 		std::cerr << "exception caught: " << e.what() << '\n';
 	}
-
+	std::cin >> sourcePath;
 	std::cout << std::endl;
 
 	return 0;
