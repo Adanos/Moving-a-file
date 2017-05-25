@@ -5,8 +5,12 @@ int main()
 	std::string sourcePath, destinationPath;
 	MovingFile movingFile;
 
-	std::cout << "Enter source and destination paths:" << std::endl;
-	std::cin >> sourcePath >> destinationPath;
+	std::cout << "Enter source path: ";
+	std::cin.sync();
+	std::getline(std::cin, sourcePath);
+	std::cin.clear();
+	std::cout << "Enter destination path: ";
+	std::getline(std::cin, destinationPath);
 	
 	try
 	{
